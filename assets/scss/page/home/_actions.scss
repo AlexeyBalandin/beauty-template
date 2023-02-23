@@ -1,0 +1,94 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+// TODO: Header---------------------------
+.menu-top {
+    &__link {
+     transition: color .3s ease;
+     &:hover {
+       color: $color-accent;
+    }
+	}
+}
+
+.phones {
+  &__call {
+    transition: color .2s ease;
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  &__callback {
+    transition: all .2s ease-in-out;
+    &:hover {
+      color: $color-white;
+      background-color: $color-accent;
+    }
+  }
+}
+
+.header-bottom {
+  &__link {
+    transition: color .3s ease;
+    &:hover {
+      color: $color-accent;
+   }
+  }
+}
+
+// TODO: Main content---------------------------
+.head-content {
+  &__btn {
+    transition: all .2s ease-in-out;
+    &:hover {
+      color: $color-accent;
+      background-color: $color-white;
+    }
+  }
+}
+
+// TODO: Product---------------------------
+.product {
+  &__buy {
+    transition: all .2s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+// TODO: Section form---------------------------
+.section-form {
+  &__email {
+    &:focus {
+      box-shadow: 0 0 10px $color-white;
+    }
+  }
+
+  &__btn {
+    transition: all .2s ease-in-out;
+    &:hover {
+      color: $color-accent;
+      background-color: $color-white;
+    }
+  }
+
+  &__map {
+    transition: all .2s ease-in-out;
+    &:hover {
+      color: $color-accent;
+      background-color: $color-white;
+    }
+  }
+}
+
+// TODO: Footer---------------------------
+.footer-bottom {
+		&__privacy {
+      transition: color .2s ease;
+      &:hover {
+        color: $color-accent;
+      }
+		}
+}

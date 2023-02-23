@@ -1,0 +1,76 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.section-form {
+  background-color: $color-primary-alt;
+  position: relative;
+
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    gap: calc($gap * 1.5);
+    padding: 3.125rem 0 8.125rem 0;
+  }
+
+  &__item {
+    width: 540px;
+    display: flex;
+    background-color: $color-accent;
+    padding: 2.187rem 2.5rem;
+    gap: calc($gap * 2.5);
+
+  }
+
+  &__content {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: $gap;
+    color: $color-white;
+  }
+
+  &__title {
+    font-weight: $font-w-bold;
+    font-size: 1.125rem;
+    line-height: 1.17;
+  }
+
+  &__description {
+    font-size: 0.875rem;
+    line-height: 1.42;
+  }
+
+  &__email {
+    width: 225px;
+    height: 35px;
+    padding-left: 1.25rem;
+    border: 1px solid $color-white;
+    border-radius: 30px;
+    outline: none;
+
+    &::placeholder {
+      color: #C4C4C4;
+      font-size: 0.875rem;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    gap: calc($gap / 2.5);
+    width: 140px;
+    height: 35px;
+    color: $color-white;
+    background-color: transparent;
+    border: 2px solid $color-white;
+  }
+
+  &__map {
+    width: 170px;
+    height: 35px;
+    color: $color-white;
+    border: 2px solid $color-white;
+    border-radius: 30px;
+  }
+}

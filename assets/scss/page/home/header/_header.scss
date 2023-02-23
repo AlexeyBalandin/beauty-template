@@ -1,0 +1,99 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+// TODO: Header-top----------------------------
+.header {
+  position: relative;
+  z-index: 10;
+  background-color: $color-white;
+}
+.header-top {
+  background-color: $color-primary-alt;
+}
+
+.menu-top {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+		}
+    &__item {
+      padding: 1rem 0 1rem 0;
+    }
+
+		&__link {
+      font-family: $font-primary;
+      font-size: 0.875rem;
+      line-height: 1.17;
+      padding: 0.625rem 0.312rem;
+      color: $color-primary;
+		}
+}
+
+// TODO: Header-body----------------------------
+.header-body {
+  border-bottom: 1px solid $color-primary-alt;
+  padding: 20px 0;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+    color: $color-accent;
+    font-weight: $font-w-bold;
+    font-size: 2.25rem;
+    line-height: 2.2;
+    letter-spacing: 0.1em;
+  }
+}
+
+.phones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc($gap * 2);
+  
+  &__call {
+    line-height: 1.18;
+  }
+
+  &__callback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    background-color: transparent;
+    font-size: 0.875rem;
+    border: 2px solid $color-accent;
+    border-radius: 40px;
+  }
+}
+
+// TODO: header-bottom----------------------------
+.header-bottom {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc($gap * 2);
+  }
+
+  &__item {
+    padding: 1.875rem 0;
+  }
+
+  &__link {
+    line-height: 1.187;
+  }
+}
