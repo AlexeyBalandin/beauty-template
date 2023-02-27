@@ -73,4 +73,15 @@
     border: 2px solid $color-white;
     border-radius: 30px;
   }
+
+  &__map-location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    a {
+      font-size: 160px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
 }

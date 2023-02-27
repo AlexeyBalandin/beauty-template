@@ -640,6 +640,24 @@ h1 {
   border: 2px solid #ffffff;
   border-radius: 30px;
 }
+.section-form__map-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  width: 100%;
+}
+.section-form__map-location a {
+  color: rgba(255, 255, 255, 0.4);
+
+  font-size: 160px;
+}
 
 .footer-top {
   padding: 2.312rem 0;
