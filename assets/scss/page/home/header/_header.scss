@@ -13,22 +13,21 @@
 
 .menu-top {
   &__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: $gap;
-		}
-    &__item {
-      padding: 1rem 0 1rem 0;
-    }
-
-		&__link {
-      font-family: $font-primary;
-      font-size: 0.875rem;
-      line-height: 1.17;
-      padding: 0.625rem 0.312rem;
-      color: $color-primary;
-		}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+	}
+  &__item {
+    padding: 1rem 0 1rem 0;
+  }
+	&__link {
+    font-family: $font-primary;
+    font-size: 0.875rem;
+    line-height: 1.17;
+    padding: 0.625rem 0.312rem;
+    color: $color-primary;
+	}
 }
 
 // TODO: Header-body----------------------------
